@@ -1,3 +1,9 @@
+# revision 19688
+# category Package
+# catalog-ctan /macros/latex/contrib/moderncv
+# catalog-date 2010-08-05 15:15:10 +0200
+# catalog-license lppl1.3
+# catalog-version 0.12
 Name:		texlive-moderncv
 Version:	0.12
 Release:	1
@@ -56,6 +62,7 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_casual_orange.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_classic_green.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_multibib.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ by changing the colours, the fonts, etc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
