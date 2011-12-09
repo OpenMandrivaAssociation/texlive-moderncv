@@ -1,11 +1,11 @@
-# revision 24574
+# revision 24770
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2011-11-11 07:02:55 +0100
+# catalog-date 2011-12-05 13:17:14 +0100
 # catalog-license lppl1.3
-# catalog-version 0.13.1
+# catalog-version 0.14
 Name:		texlive-moderncv
-Version:	0.13.1
+Version:	0.14
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Moderncv provides a documentclass for typesetting modern
@@ -27,19 +25,19 @@ is fairly customizable, allowing you to define your own style
 by changing the colours, the fonts, etc.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -58,6 +56,8 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/picture.eps
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/picture.jpg
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/publications.bib
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-zh.pdf
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-zh.tex
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template.tex
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_casual_orange.pdf
