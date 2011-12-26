@@ -1,11 +1,11 @@
-# revision 24770
+# revision 24929
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2011-12-05 13:17:14 +0100
+# catalog-date 2011-12-23 14:02:37 +0100
 # catalog-license lppl1.3
-# catalog-version 0.14
+# catalog-version 0.15.1
 Name:		texlive-moderncv
-Version:	0.14
+Version:	0.15.1
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -43,10 +43,18 @@ by changing the colours, the fonts, etc.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/moderncv/moderncv.cls
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcolorblack.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcolorblue.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcolorgreen.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcolorgrey.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcolororange.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcolorpurple.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcolorred.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcompatibility.sty
-%{_texmfdistdir}/tex/latex/moderncv/moderncvthemecasual.sty
-%{_texmfdistdir}/tex/latex/moderncv/moderncvthemeclassic.sty
-%{_texmfdistdir}/tex/latex/moderncv/moderncvthemeempty.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvstylecasual.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvstyleclassic.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvstyleempty.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvstyleoldstyle.sty
 %{_texmfdistdir}/tex/latex/moderncv/tweaklist.sty
 %doc %{_texmfdistdir}/doc/latex/moderncv/CHANGELOG
 %doc %{_texmfdistdir}/doc/latex/moderncv/KNOWN_BUGS
@@ -63,6 +71,7 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_casual_orange.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_classic_green.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_multibib.pdf
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_oldstyle_grey.pdf
 %doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
