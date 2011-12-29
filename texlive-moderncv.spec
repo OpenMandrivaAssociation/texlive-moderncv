@@ -24,16 +24,8 @@ curriculums vitae, both in a classic and in a casual style. It
 is fairly customizable, allowing you to define your own style
 by changing the colours, the fonts, etc.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -72,7 +64,6 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_classic_green.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_multibib.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_oldstyle_grey.pdf
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -83,5 +74,3 @@ by changing the colours, the fonts, etc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
