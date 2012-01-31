@@ -1,11 +1,11 @@
-# revision 25126
+# revision 25203
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2012-01-16 13:51:27 +0100
+# catalog-date 2012-01-25 23:45:22 +0100
 # catalog-license lppl1.3
-# catalog-version 0.16
+# catalog-version 0.17
 Name:		texlive-moderncv
-Version:	0.16
+Version:	0.17
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -56,6 +56,8 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/picture.eps
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/picture.jpg
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/publications.bib
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-es.pdf
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-es.tex
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-zh.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-zh.tex
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template.pdf
@@ -63,6 +65,7 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_casual_orange.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_classic_green.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_multibib.pdf
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_oldstyle_grey.2.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_oldstyle_grey.pdf
 
 #-----------------------------------------------------------------------
