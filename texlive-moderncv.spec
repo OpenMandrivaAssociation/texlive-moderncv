@@ -1,11 +1,11 @@
-# revision 25203
+# revision 25319
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2012-01-25 23:45:22 +0100
+# catalog-date 2012-02-06 17:29:05 +0100
 # catalog-license lppl1.3
-# catalog-version 0.17
+# catalog-version 0.19
 Name:		texlive-moderncv
-Version:	0.17
+Version:	0.19
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -43,6 +43,7 @@ by changing the colours, the fonts, etc.
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcolorpurple.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcolorred.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcompatibility.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvstylebanking.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvstylecasual.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvstyleclassic.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvstyleempty.sty
@@ -62,10 +63,11 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-zh.tex
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template.tex
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_banking_black.pdf
+%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_banking_red.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_casual_orange.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_classic_green.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_multibib.pdf
-%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_oldstyle_grey.2.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_oldstyle_grey.pdf
 
 #-----------------------------------------------------------------------
