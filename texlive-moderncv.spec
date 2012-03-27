@@ -1,11 +1,11 @@
-# revision 25319
+# revision 25745
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2012-02-06 17:29:05 +0100
+# catalog-date 2012-03-26 08:50:45 +0200
 # catalog-license lppl1.3
-# catalog-version 0.19
+# catalog-version 1.0
 Name:		texlive-moderncv
-Version:	0.19
+Version:	1.0
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -52,8 +52,6 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/CHANGELOG
 %doc %{_texmfdistdir}/doc/latex/moderncv/KNOWN_BUGS
 %doc %{_texmfdistdir}/doc/latex/moderncv/README
-%doc %{_texmfdistdir}/doc/latex/moderncv/examples/letter.pdf
-%doc %{_texmfdistdir}/doc/latex/moderncv/examples/letter.tex
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/picture.eps
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/picture.jpg
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/publications.bib
