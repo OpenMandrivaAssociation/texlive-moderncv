@@ -1,11 +1,11 @@
-# revision 25745
+# revision 27250
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2012-03-26 08:50:45 +0200
+# catalog-date 2012-07-30 13:39:53 +0200
 # catalog-license lppl1.3
-# catalog-version 1.0
+# catalog-version 1.1.1
 Name:		texlive-moderncv
-Version:	1.0
+Version:	1.1.1
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
