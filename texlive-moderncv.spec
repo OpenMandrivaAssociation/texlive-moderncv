@@ -1,11 +1,11 @@
-# revision 27418
+# revision 27250
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2012-08-15 09:10:55 +0200
+# catalog-date 2012-07-30 13:39:53 +0200
 # catalog-license lppl1.3
-# catalog-version 1.1.3
+# catalog-version 1.1.1
 Name:		texlive-moderncv
-Version:	1.1.3
+Version:	1.1.1
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -77,3 +77,53 @@ by changing the colours, the fonts, etc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1.1-1
++ Revision: 812607
+- Update to latest release.
+
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
++ Revision: 787687
+- Update to latest release.
+
+* Wed Feb 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.19-1
++ Revision: 772124
+- Update to latest release.
+
+* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.17-1
++ Revision: 770225
+- Update to latest upstream package
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.16-1
++ Revision: 762669
+- Update to latest upstream package
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.15.1-2
++ Revision: 754091
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.15.1-1
++ Revision: 745301
+- texlive-moderncv
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.14-1
++ Revision: 739827
+- texlive-moderncv
+
+* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.13.1-1
++ Revision: 732600
+- texlive-moderncv
+
+* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.13-1
++ Revision: 729683
+- texlive-moderncv
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.12-1
++ Revision: 719052
+- texlive-moderncv
+- texlive-moderncv
+- texlive-moderncv
+- texlive-moderncv
+
