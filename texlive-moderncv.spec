@@ -1,11 +1,11 @@
-# revision 27250
+# revision 27418
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2012-07-30 13:39:53 +0200
+# catalog-date 2012-08-15 09:10:55 +0200
 # catalog-license lppl1.3
-# catalog-version 1.1.1
+# catalog-version 1.1.3
 Name:		texlive-moderncv
-Version:	1.1.1
+Version:	1.1.3
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -80,6 +80,10 @@ cp -fpar tex doc %{buildroot}%{_texmfdistdir}
 
 
 %changelog
+* Mon Oct 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1.3-1
++ Revision: 820454
+- Update to latest release.
+
 * Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1.1-1
 + Revision: 812607
 - Update to latest release.
