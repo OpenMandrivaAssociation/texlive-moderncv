@@ -1,11 +1,11 @@
-# revision 27418
+# revision 30189
 # category Package
 # catalog-ctan /macros/latex/contrib/moderncv
-# catalog-date 2012-08-15 09:10:55 +0200
+# catalog-date 2013-04-30 08:59:42 +0200
 # catalog-license lppl1.3
-# catalog-version 1.1.3
+# catalog-version 1.5.1
 Name:		texlive-moderncv
-Version:	1.1.3
+Version:	1.5.1
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
@@ -19,10 +19,11 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-Moderncv provides a documentclass for typesetting modern
+The class provides facilities for typesetting modern
 curriculums vitae, both in a classic and in a casual style. It
 is fairly customizable, allowing you to define your own style
-by changing the colours, the fonts, etc.
+by changing the colours, the fonts, etc. A number of templates
+are provided in the distribution examples subdirectory.
 
 %post
     %{_sbindir}/texlive.post
@@ -35,6 +36,7 @@ by changing the colours, the fonts, etc.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/moderncv/moderncv.cls
+%{_texmfdistdir}/tex/latex/moderncv/moderncvcollection.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcolorblack.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcolorblue.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcolorgreen.sty
@@ -43,6 +45,10 @@ by changing the colours, the fonts, etc.
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcolorpurple.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcolorred.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvcompatibility.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncvdebugtools.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncviconsawesome.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncviconsletters.sty
+%{_texmfdistdir}/tex/latex/moderncv/moderncviconsmarvosym.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvstylebanking.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvstylecasual.sty
 %{_texmfdistdir}/tex/latex/moderncv/moderncvstyleclassic.sty
@@ -59,9 +65,7 @@ by changing the colours, the fonts, etc.
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-es.tex
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-zh.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template-zh.tex
-%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template.tex
-%doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_banking_black.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_banking_red.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_casual_orange.pdf
 %doc %{_texmfdistdir}/doc/latex/moderncv/examples/template_classic_green.pdf
@@ -77,57 +81,3 @@ by changing the colours, the fonts, etc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Oct 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1.3-1
-+ Revision: 820454
-- Update to latest release.
-
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1.1-1
-+ Revision: 812607
-- Update to latest release.
-
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 787687
-- Update to latest release.
-
-* Wed Feb 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.19-1
-+ Revision: 772124
-- Update to latest release.
-
-* Tue Jan 31 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.17-1
-+ Revision: 770225
-- Update to latest upstream package
-
-* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.16-1
-+ Revision: 762669
-- Update to latest upstream package
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.15.1-2
-+ Revision: 754091
-- Rebuild to reduce used resources
-
-* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.15.1-1
-+ Revision: 745301
-- texlive-moderncv
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.14-1
-+ Revision: 739827
-- texlive-moderncv
-
-* Tue Nov 22 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.13.1-1
-+ Revision: 732600
-- texlive-moderncv
-
-* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.13-1
-+ Revision: 729683
-- texlive-moderncv
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.12-1
-+ Revision: 719052
-- texlive-moderncv
-- texlive-moderncv
-- texlive-moderncv
-- texlive-moderncv
-
