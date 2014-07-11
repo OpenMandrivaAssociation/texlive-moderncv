@@ -6,7 +6,7 @@
 # catalog-version 1.5.1
 Name:		texlive-moderncv
 Version:	1.5.1
-Release:	6
+Release:	7
 Summary:	A modern curriculum vitae class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv
