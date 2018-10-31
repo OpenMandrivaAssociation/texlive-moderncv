@@ -1,6 +1,6 @@
 Name:		texlive-moderncv
 Version:	2.0.0
-Release:	1
+Release:	2
 Summary:	A modern curriculum vitae class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv
