@@ -1,12 +1,12 @@
 Name:		texlive-moderncv
-Version:	2.0.0
-Release:	2
+Version:	62128
+Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderncv.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderncv.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderncv.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderncv.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ by changing the colours, the fonts, etc. A number of templates
 are provided in the distribution examples subdirectory.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -34,7 +34,7 @@ are provided in the distribution examples subdirectory.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
