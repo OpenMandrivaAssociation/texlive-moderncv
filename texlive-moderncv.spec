@@ -1,5 +1,5 @@
 Name:		texlive-moderncv
-Version:	71767
+Version:	71837
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
