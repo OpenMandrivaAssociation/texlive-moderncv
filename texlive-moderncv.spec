@@ -3,7 +3,7 @@ Version:	71837
 Release:	1
 Summary:	A modern curriculum vitae class
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/moderncv
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderncv.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/moderncv.doc.r%{version}.tar.xz
